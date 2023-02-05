@@ -31,7 +31,9 @@ yabai -m config active_window_border_color   0xfffb4934
 yabai -m config normal_window_border_color   0xff555555
 yabai -m config insert_feedback_color        0xffd75f5f
 
-yabai -m config layout                       bsp
+yabai -m config layout                       float
+yabai -m config --space 1 layout bsp
+
 yabai -m config top_padding                  12
 yabai -m config bottom_padding               12
 yabai -m config left_padding                 12
@@ -45,23 +47,16 @@ yabai -m rule --add label="System Preferences" app="^System Preferences$" manage
 yabai -m rule --add label="Preferences" app="^Preferences$" manage=off border=off
 yabai -m rule --add label="Settings" app="^Settings$" manage=off border=off
 yabai -m rule --add label="Digital Colour Meter" app="^Digital Colour Meter$" manage=off border=off
-yabai -m rule --add label="Postman" app="^Postman$" manage=off border=off
-yabai -m rule --add label="MySQLWorkbench" app="^MySQLWorkbench$" manage=off border=off
 yabai -m rule --add label="Flux" app="^Flux$" manage=off border=off
 yabai -m rule --add label="Calculator" app="^Calculator$" manage=off border=off
 yabai -m rule --add label="Notes" app="^Notes$" manage=off border=off
 yabai -m rule --add label="Reminders" app="^Reminders$" manage=off border=off
 yabai -m rule --add label="Calendar" app="^Calendar$" manage=off border=off
-yabai -m rule --add label="Preview" app="^Preview$" manage=off border=off
 yabai -m rule --add label="Messages" app="^Messages$" manage=off border=off
 yabai -m rule --add label="FaceTime" app="^FaceTime$" manage=off border=off
 yabai -m rule --add label="iD" app="^iD$" manage=off border=off
-yabai -m rule --add label="Spotify" app="^Spotify$" manage=off border=off
 yabai -m rule --add label="Simulator" app="^Simulator$" manage=off border=off
-yabai -m rule --add label="QuickTime Player" app="^QuickTime Player$" manage=off border=off
-yabai -m rule --add label="zoom.us" app="^zoom.us$" manage=off border=off
-yabai -m rule --add label="Zoom Meeting" app="^Zoom Meeting" manage=off border=off
-yabai -m rule --add label="Discord" app="^Discord" manage=off border=off
-
+yabai -m rule --add label="Android Emulator - emulator:5554" app="^Android Emulator - emulator:5554$" manage=off border=off
+yabai -m rule --add label="qemu-system-x86_64" app="^qemu-system-x86_64$" manage=off border=off
 
 echo "yabai configuration loaded.."
